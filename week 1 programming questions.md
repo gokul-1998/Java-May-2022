@@ -127,7 +127,7 @@ Expected Output
 pemnutairsoislcvlaooiss
 ```
 
-## PPA 3
+## GRPA 1
 
 Write a program to find the sum of the following series up to n terms.
 ![](2023-06-20-20-38-52.png)
@@ -177,3 +177,93 @@ Expected Output
 124950
 ```
 
+## GRPA 2
+
+
+Complete the definition of the given class by defining appropriate constructors and member functions such that it is in coherence with the given main method and produce the required output.
+**question**
+
+```
+import java.util.Scanner;
+
+class Employee{
+	    String ename;
+	    String eid;
+	    String edept;
+	    
+	    public Employee(){
+		        ename = "guest";
+	    }
+//Define the required methods
+}
+public class FClass 
+{
+	    public static void main(String args[]) 
+	    {
+		        Scanner s = new Scanner(System.in);
+		        Employee e1 = new Employee();
+		
+		        //Enter name of the employee
+		        String name = s.nextLine();
+		
+		        //Enter id of the employee
+		        String id = s.nextLine();
+		
+		        //Enter department of the employee
+		        String dept = s.nextLine();
+		
+		        Employee e2 = new Employee(name,id,dept);
+		
+		        e1.copyDept(e2); 
+		        //Copies the department name of e2 into e1's department name.
+		
+		        e1.displayDetails();
+	    }
+}
+```
+
+## Test Case 1
+
+Input
+```
+Patrick
+e005
+Production
+```
+Expected Output
+```
+
+e005
+Production
+ename : guest
+eid : null
+edept : Production
+```
+## Test Case 2
+Input
+```
+Gweneth
+e009
+Marketing
+```
+Expected Output
+```
+ename : guest
+eid : null
+edept : Marketing
+```
+
+## Submission Results (private case)
+Test Case 1
+Input
+```
+Adam
+e008
+R/D
+```
+Expected Output
+```
+ename : guest
+eid : null
+edept : R/D
+```
