@@ -267,3 +267,90 @@ ename : guest
 eid : null
 edept : R/D
 ```
+
+## GRPA 3
+
+Complete the definition of the given class by defining appropriate constructors and member functions such that it is in coherence with the given main method and produce the required output
+**question**
+
+```
+import java.util.*;
+
+class Employee
+{
+    String eid;
+    String ename;
+    String eprojects[];
+ //Define all the required methods here
+public void mutator()
+    {
+        this.ename = "Mr "+ this.ename;
+        this.eprojects[0] = null;
+    }
+    
+}
+public class FClass
+{
+    public static void main(String[] args) 
+    {
+        Scanner s = new Scanner(System.in);
+    	   String project[] = {"P001","P002","P003"};
+        //Enter the id of employee
+        String id = s.nextLine();
+        //Enter the name of employee
+        String name = s.nextLine();
+        
+        Employee e1 = new Employee(id,name,project);
+        Employee e2 = new Employee(e1); 
+        //The copy constructor must copy all the data members. 
+       
+        e1.mutator();
+        
+        e2.display();
+    }
+}
+```
+
+## Test Case 1
+
+Input
+```
+e005
+Patrick
+```
+Expected Output
+```
+
+id:e005
+name:Patrick
+projects:
+P001:P002:P003:
+```
+## Test Case 2
+Input
+```
+e009
+Nadia
+```
+Expected Output
+```
+id:e009
+name:Nadia
+projects:
+P001:P002:P003:
+```
+
+## Submission Results (private case)
+Test Case 1
+Input
+```
+e008
+Adams
+```
+Expected Output
+```
+id:e008
+name:Adams
+projects:
+P001:P002:P003:
+```
