@@ -28,7 +28,6 @@ public class FClass{
     }
 }
 ```
-      |
 
 ## Test Case 1
 
@@ -51,3 +50,130 @@ Expected Output
 ```
 5000
 ```
+
+## Submission Results (private case)
+Test Case 1
+Input
+```
+25
+4
+```
+Expected Output
+```
+100
+```
+
+## PPA 2
+
+Write a program to accept a string input from user and print the characters at even indices.
+
+**question**
+
+```
+import java.util.*;
+class FClass {
+  
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    String s1 = sc.next();
+    evenDisplay(s1);
+  }
+//Define evenDisplay(String) method here
+}
+```
+
+## Test Case 1
+
+Input
+```
+hii
+```
+Expected Output
+```
+hi
+```
+## Test Case 2
+Input
+```
+Microsoft
+```
+Expected Output
+```
+
+Mcoot
+```
+
+## Submission Results (private case)
+Test Case 1
+Input
+```
+Generates
+```
+Expected Output
+```
+
+Gnrts
+```
+
+Test Case 2
+Input
+```
+pneumonoultramicroscopicsilicovolcanoconiosis
+
+```
+Expected Output
+```
+
+pemnutairsoislcvlaooiss
+```
+
+## PPA 3
+
+Write a program to find the sum of the following series up to n terms.
+![](2023-06-20-20-38-52.png)
+**question**
+
+```
+import java.util.*;
+public class SeriesSum {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+//Fill your code here
+System.out.println(sum);
+    
+  }
+}
+```
+
+## Test Case 1
+
+Input
+```
+2
+```
+Expected Output
+```
+6
+```
+## Test Case 2
+Input
+```
+3
+```
+Expected Output
+```
+20
+```
+
+## Submission Results (private case)
+Test Case 1
+Input
+```
+34
+```
+Expected Output
+```
+124950
+```
+
